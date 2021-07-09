@@ -7,13 +7,15 @@
 
 html, body { 
     font-size: 100%;
-    min-height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow:auto;
+    height: 100%;
+    overflow: auto;
 }
 
-
+@media screen and (max-width: 634px) {
+    h1 {
+        font-size: 1em;
+    }
+}
 /* Global */
 
 
@@ -29,7 +31,6 @@ html, body {
     padding: 0px;
     margin: 5px auto 10px;
     width: 80%;
-
 }
 
 
@@ -96,6 +97,10 @@ a:hover {
     transition-duration: .3s;
 }
 
+/*footer {
+    top: 0%;
+}*/
+
 footer p {
     bottom: 0%;
     font-size:1.125em;
@@ -152,8 +157,7 @@ button:hover {
 label {
     
     width: 500px;
-    font-weight:bold;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    font-weight:bold;;
 }
 
 .dialogue {
