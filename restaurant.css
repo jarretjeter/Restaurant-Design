@@ -16,10 +16,29 @@ html, body {
 
 
 .bg {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/beetbox-menu-3-min.jpg;w=960.jpeg");
-    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/2beetbox-menu-3-min.jpg;w=960.jpeg");
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+button {
+    background-color: #f71c1c;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+    height: 40px;
+    width: 125px;
+}
+
+button:hover {
+    background-color:#991111;
+    transition-duration: .1s;
+}
+
+button:active {
+    background-color:#e74d4d;
+    color: #c7f0ff;
 }
 
 .container {
@@ -120,19 +139,6 @@ input {
     font-size: 1.125em;
 }
 
-button {
-    background-color: #f71c1c;
-    font-size: 1em;
-    font-weight: bold;
-    margin: 10px 0 20px 0;
-    height: 50px;
-    width: 125px;
-}
-
-button:hover {
-    background-color:#991111;
-    transition-duration: .1s;
-}
 
 /* Menu */
 
@@ -194,6 +200,30 @@ textarea {
 }
 
 @media (max-width: 490px) {
+    .bg {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/smallbeetbox-menu-3-min.jpg;w=960.jpeg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    button {
+        margin: 10px 0 5px 0;
+
+    }
+
+    .container {
+        margin: 0px auto 5px;
+    }
+
+    footer {
+        margin-top: 0%;
+    }
+
+    nav {
+        margin: 0 0 15px 0;
+    }
+
     li {padding: 0 20px;}
 }
 
